@@ -27,7 +27,7 @@ const trackLocations = [
   { x: 480, y: 99, width: 60, height: 60, name: "Boo Cinema" },   // Boo Cinema
 
   { x: 567, y: 142, width: 60, height: 60, name: "Starview Peak"},   
-  { x: 380, y: 167, width: 60, height: 60, name: "Airship Fortress"},   
+  { x: 95, y: 195, width: 60, height: 60, name: "Airship Fortress"},
   { x: 380, y: 167, width: 60, height: 60, name: "Mario Circuit"},   
   { x: 183, y: 275, width: 60, height: 60, name: "Wario Stadium"},
 
