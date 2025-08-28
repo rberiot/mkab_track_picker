@@ -5,7 +5,7 @@ import stagesMapImage from '/MarioKartWorld_World_Map_Stages.webp';
 
 // Helper function to get the correct path for GrandPrix icons
 const getGrandPrixIconPath = (iconName) => {
-  return `/GrandPrix/${iconName}`;
+  return `/mkab_track_picker/GrandPrix/${iconName}`;
 };
 
 // Reference to the base image element
@@ -70,8 +70,8 @@ const trackLocations = [
 const grandPrix = [
   {name: 'Mushroom Cup', icon: 'mushroom.png', track1: "Mario Bros. Circuit", track2: "Crown City", track3: "Whistlestop Summit", track4: "DK Spaceport"},
   {name: 'Flower Cup', icon: 'flower.png', track1: "Desert Hills", track2: "Shy Guy Bazaar", track3: "Wario Stadium", track4: "Airship Fortress"},
-  // {name: 'Star Cup', icon: 'star.png'},
-  // {name: 'Shell Cup', icon: 'shell.png'},
+  {name: 'Star Cup', icon: 'star.png', track1: "DK Pass", track2: "Starview Peak", track3: "Sky-High Sundae", track4: "Wario Shipyard"},
+  {name: 'Shell Cup', icon: 'shell.png', track1: "Koopa Troopa Beach", track2: "Faraway Oasis", track3: "Crown City", track4: "Peach Stadium"},
   // {name: 'Banana Cup', icon: 'banana.png'},
   // {name: 'Leaf Cup', icon: 'leaf.png'},
   // {name: 'Lightning Cup', icon: 'lightning.png'},
