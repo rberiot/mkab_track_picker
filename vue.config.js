@@ -1,4 +1,4 @@
 module.exports = {
     // options...
-    publicPath: "/mkab_track_picker/",
+    publicPath: process.env.NODE_ENV === "production" ? "/mkab_track_picker/dist/" : "/",
 }

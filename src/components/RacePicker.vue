@@ -1,5 +1,12 @@
 <script setup>
 import { ref, onMounted } from 'vue';
+import innerMapImage from '/MarioKartWorld_World_Map_Inner.webp';
+import stagesMapImage from '/MarioKartWorld_World_Map_Stages.webp';
+
+// Helper function to get the correct path for GrandPrix icons
+const getGrandPrixIconPath = (iconName) => {
+  return `/GrandPrix/${iconName}`;
+};
 
 // Reference to the base image element
 const baseImageRef = ref(null);
@@ -483,7 +490,7 @@ onMounted(() => {
     >
       <!-- Cup logo display -->
       <div v-if="selectedCup" class="cup-logo-container">
-        <img :src="`/GrandPrix/${selectedCup.icon}`" :alt="`${selectedCup.name} logo`" class="cup-logo">
+        <img :src="getGrandPrixIconPath(selectedCup.icon)" :alt="`${selectedCup.name} logo`" class="cup-logo">
         <div class="cup-name">{{ selectedCup.name }}</div>
       </div>
       
@@ -495,13 +502,13 @@ onMounted(() => {
       </div>
       <img 
         ref="baseImageRef"
-        src="/MarioKartWorld_World_Map_Inner.webp" 
+        :src="innerMapImage" 
         alt="Mario Kart Wii World Map" 
         @load="handleImageLoad"
         class="base-image"
       >
       <img 
-        src="/MarioKartWorld_World_Map_Stages.webp" 
+        :src="stagesMapImage" 
         alt="Mario Kart Wii Tracks Overlay" 
         class="overlay-image"
       >
